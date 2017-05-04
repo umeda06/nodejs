@@ -14,16 +14,16 @@ if(score === 100){
 }
 
 // switch文
-var signal = 'blue';
+var signal = "blue";
 switch(signal){
-	case 'red':
+	case "red":
 		console.log("stop!");
 		break;
-	case 'green':
-	case 'blue':
+	case "green":
+	case "blue":
 		console.log("go!");
 		break;
-	case 'yellow':
+	case "yellow":
 		console.log("slow down!");
 		break;
 	default:
