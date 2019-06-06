@@ -7,15 +7,11 @@ console.log(greet);
 
 // setTimeout
 var i = 0;
-function show(){
+var show = function(){
 	console.log(i++);
-	var tid = setTimeout(function(){
-		show();
-	}, 1000);
+	var tid = setTimeout(show, 1000);
 	if(i > 3){
 		clearTimeout(tid);
 	}
 }
 show();
-
-
